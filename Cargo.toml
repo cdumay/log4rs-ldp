@@ -1,0 +1,10 @@
+[package]
+name = "libgelf"
+version = "0.1.0"
+authors = ["Cédric Dumay <cedric.dumay@ovh.net>"]
+
+[dependencies]
+log = "*"
+rustc-serialize = "*"
+libc = "*"
+time = "*"
