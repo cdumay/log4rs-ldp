@@ -1,8 +1,8 @@
 #[deny(warnings)]
 extern crate log4rs;
-extern crate serde_json;
 extern crate log4rs_gelf;
 extern crate log4rs_ldp;
+extern crate serde_json;
 
 #[macro_use]
 extern crate log;
