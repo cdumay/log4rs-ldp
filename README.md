@@ -3,6 +3,8 @@
 `log4rs-ldp` - very simple TCP/Gelf appender for [OVH Log Data Platform](https://www.ovh.com/fr/data-platforms/logs), 
 it uses [log4rs-gelf](https://github.com/cdumay/log4rs-gelf) to format log entries.
 
+**Work in progress, for testing only !**
+
 ## Usage
 
 Add this to your Cargo.toml:
