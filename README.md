@@ -1,7 +1,6 @@
-# log4rs-gelf
+# log4rs-ldp
 
-`log4rs-gelf` - very simple TCP/Gelf appender for [log4rs](https://github.com/sfackler/log4rs) based on 
-[serde_json](https://github.com/serde-rs/json).
+`log4rs-ldp` - very simple TCP/Gelf appender for [OVH Log Data Platform](https://www.ovh.com/fr/data-platforms/logs)
 
 ## Usage
 
