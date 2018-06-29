@@ -27,16 +27,16 @@ extern crate log;
 use log4rs::config::{Config, Appender, Root};
 use log4rs_gelf::append::tcp::TCPAppender;
 use log4rs_gelf::builder::Builder;
-use log::LevelFilter;
-use std::{thread, time};
-use serde_json::Value;
 use log4rs_ldp::encoders::OvhGelfEncoderBuilder;
+use log::LevelFilter;
+use serde_json::Value;
+use std::{thread, time};
 
 
 fn main() {
     let gelf = OvhGelfEncoderBuilder::new()
-        .null_character(true)
         .ovh_token("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx")
+        .null_character(true)
         .add_field("MyCustomField", Value::from("75874f9c-d4f9-45bd-a5fc-9a1ca201f70e"))
         .add_field("cpu", Value::from(15))
         .build().unwrap();
